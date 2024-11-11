@@ -1,10 +1,13 @@
 package org.example.model;
 
-public class Product {
+import java.io.Serializable;
+
+public class Product implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private String name;
     private String description;
     private double price;
-
     public Product() {}
 
     public Product(String name, String description, double price) {
